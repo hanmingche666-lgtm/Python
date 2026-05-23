@@ -1,0 +1,111 @@
+{
+  "feature_columns": [
+    "测试年级",
+    "性别",
+    "身高cm",
+    "体重kg",
+    "BMI",
+    "肺活量ml",
+    "50M跑（s）",
+    "立定跳远cm",
+    "坐位体前屈cm",
+    "长跑秒数（s）",
+    "引体仰卧个数"
+  ],
+  "class_names_cn": [
+    "优秀",
+    "良好",
+    "及格",
+    "不及格"
+  ],
+  "grid_best_params": {
+    "learning_rate": 0.05,
+    "n_estimators": 500,
+    "max_depth": 10,
+    "feature_fraction": 0.8,
+    "num_leaves": 31,
+    "min_child_samples": 20
+  },
+  "cv_folds": 5,
+  "focused_search_results": [
+    {
+      "rank": 1,
+      "f1_weighted_cv": 0.9412041816313348,
+      "params": {
+        "num_leaves": 31,
+        "min_child_samples": 20
+      }
+    },
+    {
+      "rank": 2,
+      "f1_weighted_cv": 0.9410787476886858,
+      "params": {
+        "num_leaves": 31,
+        "min_child_samples": 50
+      }
+    },
+    {
+      "rank": 3,
+      "f1_weighted_cv": 0.9409845818650464,
+      "params": {
+        "num_leaves": 31,
+        "min_child_samples": 10
+      }
+    },
+    {
+      "rank": 4,
+      "f1_weighted_cv": 0.9389782960427517,
+      "params": {
+        "num_leaves": 63,
+        "min_child_samples": 20
+      }
+    },
+    {
+      "rank": 5,
+      "f1_weighted_cv": 0.938764714741005,
+      "params": {
+        "num_leaves": 63,
+        "min_child_samples": 50
+      }
+    },
+    {
+      "rank": 6,
+      "f1_weighted_cv": 0.9387537061066924,
+      "params": {
+        "num_leaves": 63,
+        "min_child_samples": 10
+      }
+    },
+    {
+      "rank": 7,
+      "f1_weighted_cv": 0.9364231002929599,
+      "params": {
+        "num_leaves": 127,
+        "min_child_samples": 10
+      }
+    },
+    {
+      "rank": 8,
+      "f1_weighted_cv": 0.9361030221753801,
+      "params": {
+        "num_leaves": 127,
+        "min_child_samples": 20
+      }
+    },
+    {
+      "rank": 9,
+      "f1_weighted_cv": 0.935764793951219,
+      "params": {
+        "num_leaves": 127,
+        "min_child_samples": 50
+      }
+    }
+  ],
+  "classification_report_lgb": "              precision    recall  f1-score   support\n\n          优秀     0.9421    0.8838    0.9120      1196\n          良好     0.9527    0.9676    0.9601      6950\n          及格     0.9231    0.9319    0.9275      3247\n         不及格     0.9466    0.8336    0.8865       553\n\n    accuracy                         0.9433     11946\n   macro avg     0.9411    0.9042    0.9215     11946\nweighted avg     0.9433    0.9433    0.9430     11946\n",
+  "data_split": {
+    "train": 107508,
+    "test": 11946,
+    "total": 119454,
+    "ratio": "9:1"
+  }
+}
